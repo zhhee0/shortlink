@@ -19,7 +19,7 @@ public class UserController {
     private final UserService userService;
 
     /**
-     * 根据用户名
+     * 根据用户名字
      *
      * @param username
      * @return
