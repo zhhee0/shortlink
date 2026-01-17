@@ -17,4 +17,6 @@ public interface UserService extends IService<UserDO> {
     UserLoginRespDTO login(UserLoginReqDTO dto);
 
     Boolean checkLogin(String username, String token);
+
+    void logout(String username, String token);
 }
