@@ -1,6 +1,7 @@
 package com.heng.shortlink.admin.common.convention.result;
 
 import com.heng.shortlink.admin.common.convention.errorcode.BaseErrorCode;
+import com.heng.shortlink.admin.common.convention.errorcode.IErrorCode;
 import com.heng.shortlink.admin.common.convention.exception.AbstractException;
 
 import java.util.Optional;
@@ -57,9 +58,9 @@ public final class Results {
                 .setCode(errorCode)
                 .setMessage(errorMessage);
     }
-//    public static Result<Void> failure(IErrorCode errorCode) {
-//        return new Result<Void>()
-//                .setCode(errorCode.code())
-//                .setMessage(errorCode.message());
-//    }
+    public static Result<Void> failure(IErrorCode errorCode) {
+        return new Result<Void>()
+                .setCode(errorCode.code())
+                .setMessage(errorCode.message());
+    }
 }
